@@ -1,0 +1,31 @@
+@startuml
+class Usuario {
+	login: String
+	nome: String
+	senha: String
+	idade: int
+	profissao: String
+	sexo: String
+	fazerLogin()
+	fazerAmizade()
+	desfazerAmizade()
+	enviarMensagem()
+	PesquisarUsuario()
+}
+class Evento {
+	data: String
+	local: String
+	nomeOrganizador: String
+	comprarIngresso()
+}
+class Sistema {
+	cadastrarUsuario()
+	verificarLogin()
+}
+class Mensagem {
+	quemEnvia: String
+	quemRecebe: String
+	texto: String
+	privado: boolean
+}
+@enduml
